@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="zh">
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,242 +9,149 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/simple-sidebar.css">
 </head>
-<body>
-  <div class="navbar navbar-default navbar-custom">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="index.html" title="brand">TEAM1 Projects</a>
-      </div>
-      <div class="navbar-right visible-sm visible-md visible-lg">
-        <ul class="nav navbar-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle avater" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-              <img src="img/avatar.png" class="img-responsive circle" alt="Responsive image">
-            </a>
-            <ul class="dropdown-menu">
-              <li><a href="#">修改密码</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">退出登录</a></li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
-  <section class="search">
-    <div class="container-fluid">
-      <div class="sub-nav">
-        <input class="form-control" id="search-input" type="text" placeholder="Search...">
-        <a class="btn btn-default btn-green" href="new-project.html" title="create"><i class="fa fa-plus" aria-hidden="true""></i> 新建项目</a>
-      </div>
-    </div>
-  </section>
-  <section class="data-table">
-    <div class="container-fluid">
-      <table class="table table-striped">
-        <thead>
-          <tr>
-            <th class="visible-sm visible-md visible-lg">项目编号</th>
-            <th class="visible-sm visible-md visible-lg">级别</th>
-            <th class="visible-md visible-lg">年份</th>
-            <th class="visible-xs visible-sm visible-md visible-lg">项目名称</th>
-            <th class="visible-lg">所在地</th>
-            <th class="visible-lg">项目类型</th>
-            <th class="visible-md visible-lg">项目金额</th>
-            <th class="visible-sm visible-md visible-lg">状态</th>
-            <th class="visible-md visible-lg">项目经理</th>
-            <th class="visible-sm visible-md visible-lg">开发负责人</th>
-            <th class="visible-lg">备注</th>
-            <th class="visible-md visible-lg">归档人</th>
-            <th class="text-center td-btn">操作</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td class="visible-sm visible-md visible-lg">0001</td>
-            <td class="visible-sm visible-md visible-lg">7</td>
-            <td class="visible-md visible-lg">2015</td>
-            <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-            <td class="visible-lg">武汉</td>
-            <td class="visible-lg">政府</td>
-            <td class="visible-md visible-lg">4,000,000</td>
-            <td class="visible-sm visible-md visible-lg">进行中</td>
-            <td class="visible-md visible-lg">张三</td>
-            <td class="visible-sm visible-md visible-lg">封昌俊</td>
-            <td class="visible-lg">已移交某某某</td>
-            <td class="visible-md visible-lg">方宇昕</td>
-            <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-          </tr>
-          <tr>
-            <td class="visible-sm visible-md visible-lg">0001</td>
-            <td class="visible-sm visible-md visible-lg">7</td>
-            <td class="visible-md visible-lg">2015</td>
-            <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-            <td class="visible-lg">武汉</td>
-            <td class="visible-lg">政府</td>
-            <td class="visible-md visible-lg">4,000,000</td>
-            <td class="visible-sm visible-md visible-lg">进行中</td>
-            <td class="visible-md visible-lg">张三</td>
-            <td class="visible-sm visible-md visible-lg">封昌俊</td>
-            <td class="visible-lg">已移交某某某</td>
-            <td class="visible-md visible-lg">方宇昕</td>
-            <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-          </tr><tr>
-          <td class="visible-sm visible-md visible-lg">0001</td>
-          <td class="visible-sm visible-md visible-lg">7</td>
-          <td class="visible-md visible-lg">2015</td>
-          <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-          <td class="visible-lg">武汉</td>
-          <td class="visible-lg">政府</td>
-          <td class="visible-md visible-lg">4,000,000</td>
-          <td class="visible-sm visible-md visible-lg">进行中</td>
-          <td class="visible-md visible-lg">张三</td>
-          <td class="visible-sm visible-md visible-lg">封昌俊</td>
-          <td class="visible-lg">已移交某某某</td>
-          <td class="visible-md visible-lg">方宇昕</td>
-          <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-        </tr><tr>
-        <td class="visible-sm visible-md visible-lg">0001</td>
-        <td class="visible-sm visible-md visible-lg">7</td>
-        <td class="visible-md visible-lg">2015</td>
-        <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-        <td class="visible-lg">武汉</td>
-        <td class="visible-lg">政府</td>
-        <td class="visible-md visible-lg">4,000,000</td>
-        <td class="visible-sm visible-md visible-lg">进行中</td>
-        <td class="visible-md visible-lg">张三</td>
-        <td class="visible-sm visible-md visible-lg">封昌俊</td>
-        <td class="visible-lg">已移交某某某</td>
-        <td class="visible-md visible-lg">方宇昕</td>
-        <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-      </tr><tr>
-      <td class="visible-sm visible-md visible-lg">0001</td>
-      <td class="visible-sm visible-md visible-lg">7</td>
-      <td class="visible-md visible-lg">2015</td>
-      <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-      <td class="visible-lg">武汉</td>
-      <td class="visible-lg">政府</td>
-      <td class="visible-md visible-lg">4,000,000</td>
-      <td class="visible-sm visible-md visible-lg">进行中</td>
-      <td class="visible-md visible-lg">张三</td>
-      <td class="visible-sm visible-md visible-lg">封昌俊</td>
-      <td class="visible-lg">已移交某某某</td>
-      <td class="visible-md visible-lg">方宇昕</td>
-      <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-    </tr><tr>
-    <td class="visible-sm visible-md visible-lg">0001</td>
-    <td class="visible-sm visible-md visible-lg">7</td>
-    <td class="visible-md visible-lg">2015</td>
-    <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-    <td class="visible-lg">武汉</td>
-    <td class="visible-lg">政府</td>
-    <td class="visible-md visible-lg">4,000,000</td>
-    <td class="visible-sm visible-md visible-lg">进行中</td>
-    <td class="visible-md visible-lg">张三</td>
-    <td class="visible-sm visible-md visible-lg">封昌俊</td>
-    <td class="visible-lg">已移交某某某</td>
-    <td class="visible-md visible-lg">方宇昕</td>
-    <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-  </tr><tr>
-  <td class="visible-sm visible-md visible-lg">0001</td>
-  <td class="visible-sm visible-md visible-lg">7</td>
-  <td class="visible-md visible-lg">2015</td>
-  <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-  <td class="visible-lg">武汉</td>
-  <td class="visible-lg">政府</td>
-  <td class="visible-md visible-lg">4,000,000</td>
-  <td class="visible-sm visible-md visible-lg">进行中</td>
-  <td class="visible-md visible-lg">张三</td>
-  <td class="visible-sm visible-md visible-lg">封昌俊</td>
-  <td class="visible-lg">已移交某某某</td>
-  <td class="visible-md visible-lg">方宇昕</td>
-  <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-</tr><tr>
-<td class="visible-sm visible-md visible-lg">0001</td>
-<td class="visible-sm visible-md visible-lg">7</td>
-<td class="visible-md visible-lg">2015</td>
-<td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-<td class="visible-lg">武汉</td>
-<td class="visible-lg">政府</td>
-<td class="visible-md visible-lg">4,000,000</td>
-<td class="visible-sm visible-md visible-lg">进行中</td>
-<td class="visible-md visible-lg">张三</td>
-<td class="visible-sm visible-md visible-lg">封昌俊</td>
-<td class="visible-lg">已移交某某某</td>
-<td class="visible-md visible-lg">方宇昕</td>
-<td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-</tr><tr>
-<td class="visible-sm visible-md visible-lg">0001</td>
-<td class="visible-sm visible-md visible-lg">7</td>
-<td class="visible-md visible-lg">2015</td>
-<td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-<td class="visible-lg">武汉</td>
-<td class="visible-lg">政府</td>
-<td class="visible-md visible-lg">4,000,000</td>
-<td class="visible-sm visible-md visible-lg">进行中</td>
-<td class="visible-md visible-lg">张三</td>
-<td class="visible-sm visible-md visible-lg">封昌俊</td>
-<td class="visible-lg">已移交某某某</td>
-<td class="visible-md visible-lg">方宇昕</td>
-<td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-</tr><tr>
-<td class="visible-sm visible-md visible-lg">0001</td>
-<td class="visible-sm visible-md visible-lg">7</td>
-<td class="visible-md visible-lg">2015</td>
-<td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-<td class="visible-lg">武汉</td>
-<td class="visible-lg">政府</td>
-<td class="visible-md visible-lg">4,000,000</td>
-<td class="visible-sm visible-md visible-lg">进行中</td>
-<td class="visible-md visible-lg">张三</td>
-<td class="visible-sm visible-md visible-lg">封昌俊</td>
-<td class="visible-lg">已移交某某某</td>
-<td class="visible-md visible-lg">方宇昕</td>
-<td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-</tr><tr>
-<td class="visible-sm visible-md visible-lg">0001</td>
-<td class="visible-sm visible-md visible-lg">7</td>
-<td class="visible-md visible-lg">2015</td>
-<td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
-<td class="visible-lg">武汉</td>
-<td class="visible-lg">政府</td>
-<td class="visible-md visible-lg">4,000,000</td>
-<td class="visible-sm visible-md visible-lg">进行中</td>
-<td class="visible-md visible-lg">张三</td>
-<td class="visible-sm visible-md visible-lg">封昌俊</td>
-<td class="visible-lg">已移交某某某</td>
-<td class="visible-md visible-lg">方宇昕</td>
-<td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
-</tr>
-</tbody>
-</table>
-</div>
-</section>
-<section class="paginations">
-  <div class="container-fluid">
-    <small class="pull-left pagination-text visible-sm visible-md visible-lg">现在是第1页，共1页，总共15条数据</small>
-    <ul class="pagination pull-right">
-      <li>
-        <a href="#" aria-label="Previous">
-          <span aria-hidden="true">&laquo;</span>
-        </a>
-      </li>
-      <li class="active"><a href="#">1</a></li>
-      <li><a href="#">2</a></li>
-      <li><a href="#">3</a></li>
-      <li><a href="#">4</a></li>
-      <li><a href="#">5</a></li>
-      <li>
-        <a href="#" aria-label="Next">
-          <span aria-hidden="true">&raquo;</span>
-        </a>
-      </li>
-    </ul>
-  </div>
-</section>
 
-<script src="js/jquery.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
+<body>
+    <div id="wrapper">
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">Projects</a>
+                </li>
+                <li>
+                    <a href="#">Dashboard</a>
+                </li>
+                <li>
+                    <a href="#">Shortcuts</a>
+                </li>
+                <li>
+                    <a href="#">Overview</a>
+                </li>
+                <li>
+                    <a href="#">Events</a>
+                </li>
+                <li>
+                    <a href="#">About</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="navbar navbar-default navbar-custom">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <a class="navbar-brand" href="#menu-toggle" id="menu-toggle"><i class="fa fa-bars"></i></a>
+                    </div>
+                    <div class="navbar-right visible-sm visible-md visible-lg">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle avater" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                    <img src="img/avatar.png" class="img-responsive circle" alt="Responsive image">
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">修改密码</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#">退出登录</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <section class="search">
+                <div class="container-fluid">
+                    <div class="sub-nav">
+                        <input class="form-control" id="search-input" type="text" placeholder="Search...">
+                        <a class="btn btn-default btn-green" href="new-project.html" title="create"><i class="fa fa-plus" aria-hidden="true""></i> 新建项目</a>
+                    </div>
+                </div>
+            </section>
+            <section class="data-table">
+                <div class="container-fluid">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th class="visible-sm visible-md visible-lg">项目编号</th>
+                                <th class="visible-sm visible-md visible-lg">级别</th>
+                                <th class="visible-md visible-lg">年份</th>
+                                <th class="visible-xs visible-sm visible-md visible-lg">项目名称</th>
+                                <th class="visible-lg">所在地</th>
+                                <th class="visible-lg">项目类型</th>
+                                <th class="visible-md visible-lg">项目金额</th>
+                                <th class="visible-sm visible-md visible-lg">状态</th>
+                                <th class="visible-lg">项目经理</th>
+                                <th class="visible-lg">开发负责人</th>
+                                <th class="visible-lg">备注</th>
+                                <th class="visible-lg">归档人</th>
+                                <th class="text-center td-btn">操作</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="visible-sm visible-md visible-lg">0001</td>
+                                <td class="visible-sm visible-md visible-lg">7</td>
+                                <td class="visible-md visible-lg">2015</td>
+                                <td class="visible-xs visible-sm visible-md visible-lg">武昌区人大会务管理系统</td>
+                                <td class="visible-lg">武汉</td>
+                                <td class="visible-lg">政府</td>
+                                <td class="visible-md visible-lg">4,000,000</td>
+                                <td class="visible-sm visible-md visible-lg">进行中</td>
+                                <td class="visible-lg">张三</td>
+                                <td class="visible-lg">封昌俊</td>
+                                <td class="visible-lg">已移交某某某</td>
+                                <td class="visible-lg">方宇昕</td>
+                                <td class="text-center td-btn"><a class="btn-table" href="project-info.html" title="编辑"><i class="fa fa-cog" aria-hidden="true"></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+            <section class="paginations">
+                <div class="container-fluid">
+                    <small class="pull-left pagination-text visible-sm visible-md visible-lg">现在是第1页，共1页，总共15条数据</small>
+                    <ul class="pagination pull-right">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </div>
+        <!-- /#page-content-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+    <!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Menu Toggle Script -->
+    <script>
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#wrapper").toggleClass("toggled");
+        });
+    </script>
 </body>
+
 </html>
