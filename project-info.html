@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TEMA1-项目一览</title>
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <div class="navbar navbar-default navbar-custom">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="index.html" title="brand">TEAM1 Projects</a>
+      </div>
+      <div class="navbar-right">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle avater" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+              <img src="img/avatar.png" class="img-responsive circle" alt="Responsive image">
+            </a>
+            <ul class="dropdown-menu">
+              <li><a href="#">修改密码</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">退出登录</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <section class="project-form">
+    <div class="container-fluid">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title">项目信息</h4>
+          <a href="#" id="edit-project" class="btn-icon pull-right" data-toggle="tooltip" data-placement="bottom" title="修改项目信息"><i class="fa fa-edit"></i> </a>
+        </div>
+        <form class="form-horizontal">
+          <div class="form-group">
+            <label class="col-sm-2 control-label">项目编号</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">级别</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">年份</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">项目名称</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">所在地</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">项目类型</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">项目金额</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">状态</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">项目经理</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">开发负责人</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">备注</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="col-sm-2 control-label">归档人</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" value="value" readonly>
+            </div>
+          </div>
+          <div id="remove-project" class="form-group hidden">
+            <div class="col-sm-12">
+              <button id="remove-btn" class="btn btn-danger btn-block" type="button" data-toggle="modal" data-target="#remove-modal">删除项目</button>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a id="goback-index" class="btn btn-default" href="index.html" title="返回">返回</a>
+            <a id="cancel-edit" class="btn btn-default hidden" href="#" title="取消编辑">取消编辑</a>
+            <button id="save-edit" class="btn btn-default btn-green hidden" type="button">保存</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!--Remove Porject Confirm Modal -->
+  <div class="modal fade" id="remove-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">删除项目确认</h4>
+        </div>
+        <div class="modal-body">
+          <p class="alert alert-warning">此操作将永久删除项目：<strong>项目名称</strong>，删除后的项目不能恢复。</p>
+          <p>请输入项目名称以确认删除</p>
+          <div class="form-group">
+          <input type="text" class="form-control input-block">
+          </div>
+          <div class="form-group">
+            <button class="btn btn-danger btn-block disabled" type="button">确认删除项目</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip();
+      $('#edit-project').click(function(){
+        $('#edit-project').addClass('hidden');
+        $('#goback-index').addClass('hidden');
+        $('#save-edit').removeClass('hidden');
+        $('#cancel-edit').removeClass('hidden');
+        $('#remove-project').removeClass('hidden')
+        $('.form-control').removeAttr('readonly');
+      });
+      $('#cancel-edit').click(function() {
+        $('#edit-project').removeClass('hidden');
+        $('#goback-index').removeClass('hidden');
+        $('#save-edit').addClass('hidden');
+        $('#cancel-edit').addClass('hidden');
+        $('#remove-project').addClass('hidden')
+        $('.form-control').prop('readonly',true);
+      });
+    })
+  </script>
+</body>
+</html>
