@@ -141,20 +141,20 @@
     <script src="js/bootstrap.min.js"></script>
     <!-- Menu Toggle Script -->
     <script>
-        $("#menu-toggle").click(function(e) {
-            e.preventDefault();
-            $('#wrapper').toggleClass('toggled');
-            $('#menu-toggle').toggleClass('folded');
-            if($("#menu-toggle").hasClass('folded')){
-                $("#menu-toggle>i").removeClass('fa-angle-double-left');
-                $("#menu-toggle>i").addClass('fa-angle-double-right');
-            }
-            else {
-                $("#menu-toggle>i").addClass('fa-angle-double-left');
-                $("#menu-toggle>i").removeClass('fa-angle-double-right');
-            };
-        });
-    </script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $('#wrapper').toggleClass('toggled');
+        $('#menu-toggle').toggleClass('folded');
+        if($("#menu-toggle").hasClass('folded')){
+            $("#menu-toggle>i").removeClass('fa-angle-double-left');
+            $("#menu-toggle>i").addClass('fa-angle-double-right');
+        }
+        else {
+            $("#menu-toggle>i").addClass('fa-angle-double-left');
+            $("#menu-toggle>i").removeClass('fa-angle-double-right');
+        };
+    });
+</script>
 </body>
 
 </html>
