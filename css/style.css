@@ -7,24 +7,24 @@ html,body {
   height: 100%;
 }
 body {
-  background: #F7FAF9;
+  background: #fff;
 }
 .navbar-custom {
   border-radius: 0;
   border: none;
-  background: white;
+  background: #48CFAD;
   box-shadow: 0px 1px 2px 0px #BEC0C2;
   margin-bottom: 0;
-  z-index: 6000;
+  z-index: 9999;
 }
 .navbar-brand {
-  color: #333 !important;
+  color: white !important;
 }
 .nav>li>.avater {
   position: relative;
   display: block;
   padding: 7px 17px;
-  border-left: 1px solid #BEC0C2;
+  border-left: 1px solid #37BC9B;
 }
 .nav .open>a, .nav .open>a:focus, .nav .open>a:hover {
   background-color: #eee;
@@ -60,7 +60,7 @@ body {
 .table {
   background: white;
   border: 1px solid #BEC0C2;
-  box-shadow: 0px 1px 2px 0px #BEC0C2;
+  // box-shadow: 0px 1px 2px 0px #BEC0C2;
 }
 .table>thead>tr>th {
   height: 30px;
