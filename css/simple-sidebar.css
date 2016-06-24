@@ -42,7 +42,7 @@
     border-radius: 3px;
     background: #F7FAF9;
     color: #37BC9B !important;
-    z-index: 9000;
+    z-index: 1040;
 }
 .sidebar-menu.folded {
     left: -33px;
@@ -139,7 +139,7 @@
         border-radius: 3px 0 0 3px;
         background: #fff;
         color: #37BC9B !important;
-        z-index: 9000;
+        z-index: 1040;
     }
     .sidebar-menu.folded {
         left: -1px;
